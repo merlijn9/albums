@@ -1,0 +1,94 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #fffa85;
+}
+
+html, body, div, article, p, ul, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.headerA {
+    text-align: center;
+    font-family: "disco";
+    font-size: 130px;
+    margin: 0;
+    color: #000;
+
+}
+
+.alles {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.album {
+    width: 300px;
+    float: left;
+    margin: 1em;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.album article {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 305px;
+    font-size: .8em;
+    padding: 1.5em;
+    margin-top: 0;
+}
+
+.album:hover article{
+    cursor: pointer;
+}
+
+.album article h3, .album article h4, .album article p {
+    padding: .3em;
+}
+
+.dmxl {
+    font-size: .8em;
+}
+
+.up article {
+    animation: up 1s forwards;
+}
+
+.down article {
+    animation: down 1s forwards;
+}
+
+@keyframes down {
+    10% {margin-top: -305px}
+    30% {margin-top: -152px}
+    50% {margin-top: -76px}
+    70% {margin-top: -38px}
+    90% {margin-top: -19px}
+    20%, 40%, 60%, 80%, 100% {margin-top: 0}
+}
+
+@keyframes up {
+    10% {margin-top: 0}
+    30% {margin-top: -156px}
+    50% {margin-top: -255px}
+    70% {margin-top: -270px}
+    90% {margin-top: -290px}
+    20%, 40%, 60%, 80%, 100% {margin-top: -305px}
+}
+
+#validatie img {
+    height: 1em;
+    width: auto;
+    border: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "disco";
+    src: url("../fonts/SubscribeShadow.ttf");
+}
